@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Container, Form, Row } from "react-bootstrap";
 import axios from "axios";
 import TableDesign from "./TableDesign";
+import { Link } from "react-router-dom";
 
 const App = () => {
   const [drivername, setDriverName] = useState("");
@@ -55,6 +56,11 @@ const App = () => {
           <Button variant="primary" type="submit" className="mb-3">
             REGISTER
           </Button>
+          <Link to="/list" style={{ textDecoration: "none", color: "#ffffff" }}>
+            <Button variant="primary" className="m-3 mt-0">
+              COMPLETE LIST
+            </Button>
+          </Link>
         </Form>
         <TableDesign />
       </Row>

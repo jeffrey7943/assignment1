@@ -10,6 +10,7 @@ const TableDesign = () => {
           <th>DRIVER NAME</th>
           <th>VEHICLE NUMBER</th>
           <th>CHECK IN TIME</th>
+          <th>CHECK OUT</th>
         </tr>
       </thead>
       <CarPark />
