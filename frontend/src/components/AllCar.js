@@ -16,13 +16,13 @@ const AllCar = () => {
   if (driver.length > 0) {
     return driver.map((driver) => {
       const d = new Date(driver.checkin);
-      let date = d.toLocaleString(undefined, { timeZone: "Asia/Kolkata" });
+      let date = d.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
       let dtdate;
       if (driver.checkout == null) {
         dtdate = "NOT CHECKED OUT";
       } else {
         const dt = new Date(driver.checkout);
-        dtdate = dt.toLocaleString(undefined, { timeZone: "Asia/Kolkata" });
+        dtdate = dt.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
         console.log(dtdate);
       }
 
